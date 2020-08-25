@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Owl coursel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/5d1c1778bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Linking style sheet -->
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <div class="row">
+          <div class="col liquid">
+            <h4><i class="fab fa-connectdevelop"></i> Project #</h4>
+
+            <!-- Owl-Carousel -->
+
+            <div class="owl-carousel owl-theme">
+              <img
+                src="./assets/undraw_authentication_fsn5.svg"
+                alt=""
+                class="login_img"
+              />
+              <img
+                src="./assets/undraw_personal_data_29co.svg"
+                alt=""
+                class="login_img"
+              />
+              <img
+                src="./assets/undraw_fingerprint_swrc.svg"
+                alt=""
+                class="login_img"
+              />
+            </div>
+
+            <!-- /Owl-Carousel -->
+
+            <div class="follow">
+              Follow us <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-snapchat-square"></i>
+            </div>
+          </div>
+          <div class="col login">
+            <button type="button" class="btn btn-signup">Sign Up</button>
+            <form>
+              <div class="titles">
+                <h6>We keep everything</h6>
+                <h3>Ready to Login</h3>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-input" />
+                <div class="input-icon"></div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-input"
+                />
+                <div class="input-icon"></div>
+              </div>
+
+              <button type="submit" class="btn btn-login">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          items: 1,
+        });
+      });
+    </script>
+  </body>
+</html>
